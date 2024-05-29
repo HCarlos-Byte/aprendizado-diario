@@ -1,0 +1,343 @@
+@import url(/assests/css/reset.css);
+
+/* Header */
+.header {
+    position: relative;
+    margin-top: 50px;
+    padding: 100px 0 300px;
+    background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite alternate;
+}
+
+.header::after {
+    content: "";
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(0deg, var(--primary-color), transparent);
+}
+
+.header .header_content {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 0 40px;
+}
+
+.header .header_channels {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header .header_channels .header_channel {
+    object-fit: contain;
+}
+
+.header .header_title {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.header .light_text {
+    font-size: 2rem;
+    display: block;
+    font-weight: lighter;
+}
+
+.header .space-line {
+    width: 70%;
+    max-width: 700px;
+    height: 5px;
+    background: var(--divider-bg-color);
+    display: block;
+}
+
+.header .offer {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.header .offer .offer_price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+}
+
+.header .offer .offer_price-small {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.header .button {
+    animation: wiggle 2.2s linear infinite;
+}
+
+.header .text-small {
+    max-width: 300px;
+    text-align: center;
+}
+
+/* Main */
+#subscription {
+    position: relative;
+    background: url(../img/background-movies-series.png)no-repeat;
+    background-size: cover;
+}
+
+.text-subscription {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 80px;
+    margin: 40px 0;
+    perspective: 2000px;
+    perspective-origin: top;
+}
+
+.card {
+    padding: 30px 50px;
+    border-radius: 10px;
+    background: var(--card-bg-color);
+    text-align: left;
+    display: flex;
+    min-height: 600px;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 1s ease-in-out;
+}
+
+.plan-price {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.price {
+    font-size: 16px;
+}
+
+.value {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.description li {
+    list-style: none;
+    font-size: 1.25rem;
+    margin: 14px 0;
+    padding-left: 14px;
+}
+
+.description li::marker {
+    content: "+";
+    font-size: 2rem;
+    margin: 0 8px 0 0;
+}
+
+.cards:has(.mobile-card:hover) .multitelas-card {
+    transform: rotateY(-45deg);
+}
+
+.cards:has(.multitelas-card:hover) .mobile-card {
+    transform: rotateY(45deg);
+}
+
+/* CARDS CONTENT */
+.content {
+    margin: 100px auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.container-card {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.content-card {
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: center;
+    border: 2px solid transparent;
+    transition: transform 0.8, backgroun 0.8s, border 1s;
+}
+
+.content-card:hover {
+    transform: scale(1.05);
+    border: 2px solid var(--tertiary-color);
+}
+
+.content-card:hover .content-image {
+    opacity: 0;
+}
+
+.content-image {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: opacity 2s;
+}
+
+/* HBO Content */
+.content-card:nth-child(1):hover {
+    background-image: url("../img/hbo-hover_0.webp");
+}
+
+/* Max Originals Content */
+.content-card:nth-child(2):hover {
+    background-image: url("../img/MAX-Hover.webp");
+}
+
+/* DC Content */
+.content-card:nth-child(3):hover {
+    background-image: url("../img/DC-Hover.webp");
+}
+
+/* WB Content */
+.content-card:nth-child(4):hover {
+    background-image: url("../img/WB-Hover.webp");
+}
+
+/* CN Content */
+.content-card:nth-child(5):hover {
+    background-image: url("../img/CN-Hover.png");
+}
+
+/* Champions League Content */
+.content-card:nth-child(6):hover {
+    background-image: url("../img/UCL-Hover.webp");
+}
+
+@media screen and (max-width: 1200px) {
+    .cards {
+        gap: 40px;
+    }
+
+    container-card {
+        gap: 32px;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .multitelas-card {
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    container-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .price {
+        font-size: 1.5rem;
+    }
+
+    .subdescription {
+        font-size: 1rem;
+    }
+
+    .plan-price {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .multitelas-card {
+        padding: 40px;
+    }
+
+    container-card {
+        grid-template-columns: repeat(6, 100%);
+        grid-auto-flow: column;
+        overflow: auto hidden;
+    }
+}
+
+@media (pointer: coarse) {
+    .content-card:hover {
+        transform: none;
+    }
+
+    .cards:has(.multitelas-card:nth-child(1):hover) .multitelas-card:nth-child(2),
+    .cards:has(.multitelas-card:nth-child(2):hover) .multitelas-card:nth-child(1) {
+        transform: none;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes wiggle {
+
+    0%,
+    10% {
+        transform: rotate(0);
+    }
+
+    15% {
+        transform: rotate(-15deg);
+    }
+
+    20% {
+        transform: rotate(10deg);
+    }
+
+    25% {
+        transform: rotate(-10deg);
+    }
+
+    30% {
+        transform: rotate(10deg);
+    }
+
+    35% {
+        transform: rotate(-10deg);
+    }
+
+    40%,
+    100% {
+        transform: rotate(0);
+    }
+}

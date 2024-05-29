@@ -1,0 +1,57 @@
+Pseudo-elementos
+Usado para adicionar elementos extras na pagina, sem a necessidade de declara-lo no HTML, ou para selecionar uma parte de algum elemento.
+Identidicado por ( ::palavra-chave )
+
+::first-letter
+Seleciona a primeira letra da primeira linha
+Propriedades disponiveis:
+- color
+- background
+- margin
+- padding
+- border
+- font
+- propriedades de texto
+
+::firt-line
+Seleciona a primeira linha de um texto
+Propriedades disponiveis
+- color
+- background
+- font
+- propriedades de texto
+
+::backdrop
+Estiliza o plano de fundo de elementos em modo de tela cheia, como dialog ou video
+
+::marker
+Permite estilizar os topicos ou numeros de uma lista ( li ) ou então a flecha de um elemento summary
+Propriedades aceitas
+- color
+- content
+- while-space
+- font
+- animation
+- transicion
+
+::placeholder
+Um placeholder é uma dica para ajudar no preenchimento de algum campo de formulario.
+Propriedades aceitas
+- color
+- font
+- background
+- text
+
+::selection
+Permite estilazar a seleção de textos no navegador
+Propriedades aceitas
+-color
+-background-color
+-text
+
+::file-selector-button
+Permite estilizar a seleção de textos no navegador
+
+::before / ::after
+Permite adicionar um elemento antes e depois respectiovamente de uma tag virtualmente sem a necessidade de colocarmos a mesma dentro do html, utilizando a propriedade obrigatoria ( content ) podemos adicionaro elemento que selecionamos e tambem podemos deix-lo com o valor vazio utilizando o ( content: "" ).
+Depois disso podemos adicionar uma variedade de propriedades de estilização para eles, podemos deixar o content vazio e criar um gradiente virtual para eles, alem de diversas outras utilidades

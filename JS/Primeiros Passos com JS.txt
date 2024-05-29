@@ -1,0 +1,25 @@
+DECLARAR VARIAVEL
+
+    let - É uma variavel que pode ser alterado o seu valo a qualquer momento.
+    const - É um valor que apos declarado se torna imutavel.
+
+TIPOS DE OPERADOR
+
+    = (igual) esse operador é um operador de atribiuição.
+    + (mais) esse operador é um operador de adição
+    - (menos) esse operador é um operador de subtração
+    / (dividir) esse operador é um operador é um operador de divisão
+
+ESTRTURA CONDICIONAL
+
+    (=) significa uma atibuição de algo para uma variavel
+    (==) siginifica uma igualdade a algo fazendo uma conversão implicita de texto para numero, raramente é utilizado
+    (===) siginifica uma igualdade sem fazer a conversão implicita
+
+    if (se) - determina uma ação SE alguma condição for aplicada e verdadeira essa condição
+    if (!) - utilizado o ponto de exclamação antes da condição exigida ele entende que tem que falsep pra ser aplicado a sua ação.
+
+    else (seNão) - Esse tem a mesma função do if com um ponto de exclamação ele cria uma condição que é contraria ao que foi aplicado no if.
+
+   
+

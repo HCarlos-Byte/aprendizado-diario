@@ -1,0 +1,29 @@
+CSS Grid é um recurso que permite construir layouts baseados em grades bidimensionais, dividindo a página em regiões e definindo onde cada elemento deve ficar.
+
+display: grid;
+Esse se comporta em relação aos containers e seus irmão diretos, aplicando uma formatação de ( column )coluna um abaixo do outro.
+
+display: inline-grid;
+Já o inline-grid tambem atua em relação aos containers e seus irmãos diretos porem aplicando uma formatação em row ( linha ) um ao lado do outro.
+
+Podemos alterar essas propriedades padrão do display grid para criar colunas com a propriedade a seguir.
+
+grid-template-columns:
+E adicionando os valores para a quantidade de colunas que queremos.
+
+E podemos determinar as rows com a seguinte propriedade.
+
+grid-template-rows:
+E determinarmos os valores para a quantidade de rows que vamos ter.
+
+Unidade de medida FR
+Esssa unidade de medida foi criada no css para representar uma fração do container, ela precisa de uma altura e uma largura definida par que ela possa calcular uma fração desse valor e exibir isso na tela.
+Em casos de muitas colunas ou linhas podemos adicionar o valor ( repeat ) da seguinte maneira.
+
+grid-template-columns: repeat( 8, 1fr);
+Isso vai criar 8 colunas com uma fração da largura do container, a mesma coisa funciona para o ( gri-template-rows ).
+
+
+
+
+

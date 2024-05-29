@@ -1,0 +1,14 @@
+Estrutura for loop
+    A estrutura for é dividida em três partes e elas definem o inicio, até quando isso vai se repetir e tambem a condição para que isso aconteça.
+    Ela se representa dessa maneira:
+
+    for (let index = 0; i < array.lenght; i++){
+
+    }
+
+    let i = 0 - recebe a declarção do inicio da repetição normalmente utilizasse o zero.
+    i < array.lenght - recebe a declarção de até quando vamos utilizar dessa repetição. (Nesse caso o codigo está procurando por toda a lista, podemos alterar o nome dessa lista por exemplo como nome.lenght que a função continuaria a mesma).
+    i++ - é a condição para que isso aconteça.
+
+
+

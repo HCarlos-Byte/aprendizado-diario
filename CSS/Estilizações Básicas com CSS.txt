@@ -1,0 +1,95 @@
+Cores pré definidas
+Temos cerca de 240 cores que os próprios navegadores já nos entregam em formato escrito, como (black, white, orange, red, blue, purple, yellow...) dentre várias outras.
+
+<head>
+<style>
+#teste {
+background: red;
+}
+</style>
+</head>
+
+Assim definimos uma cor de fundo vermelha.
+
+RGB
+Podemos definir com numeros os tons de red, green, blue com valores de 0 até 255 de cada um.
+
+<head>
+<style>
+#teste {
+background: rgb(0, 0, 0);
+}
+</style>
+</head>
+
+Assim definimos uma cor de fundo preto, mas podemos definir várias misturas para tons de cores rgb(255, 0, 0) vermelho; rgb(0, 255, 0) verde; rgb(0, 0, 255) azul; e por ai vai.
+
+RGBA
+Esse já tem uma função de extender um canal alfa que define a opacidade da cor que selecionamos.
+
+<head>
+<style>
+#teste {
+background: rgba(0, 0, 0, .5);
+}
+</style>
+</head>
+
+Assim definimos um preto um pouco mais transparente podemos selecionar um alfa de 0.0 até 1.0 sendo um a transparencia total e outro com a cor mais intensa sem nenhuma transparencia respectivamente.
+
+Hexadeceimal 
+Ele é composto por um ( # ) e seguido 6 digitos sendo definidos por numeros e letras do 0 ao 9 e do A ao F, sendo que os dois primeiro digitos representa o vermelho os dois do meio o verde e os dois ultimos o azul.
+
+<head>
+<style>
+#teste {
+background: #FF0000;
+}
+</style>
+</head>
+
+Assim definimos uma cor vermelha como cor de fundo. Mas podemos misturar várias possibilidade de cores sendo um total de 255 possibildades. Tambem podemos adicionar transparencia para elas  tendo que definir um valor entre 00 e FF no final.
+
+HSL / HSLA
+É uma roda de cores que tenho que estudar mais a fundo mas basicamente ela tem tons divididos por matiz saturação luminosidade. Onde a matiz é meio que uma roda que vai de 0 a 360 onde 0 ou 360 = vermelho; 120 = verde; 240 = azul. Saturação vai de 0 a 100% onde 0 é uma cor mais cinza e 100% é uma cor total.
+Luminosidade tabem vai de 0 a 100% onde 0 é preto e 100% é branco.
+
+<head>
+<style>
+#teste {
+background: hsl(120, 100%, 50%);
+}
+</style>
+</head>
+
+Aqui definimos um verde bem vivido e com meia luminosidade. O hsl tam aceita o canal alfa dentro dele onde conseguimos trabalhar com as propriedades alfa de opacidade que tambem vai de 0.0 a 1.0 de opacidade.
+
+Fundos de Objetos
+Para criarmos um efeito gradiente dentro de um objeto podemos fazer assim.
+
+<head>
+<style>
+#teste {
+background-image: linear-gradient(pink, purple);
+}
+</style>
+</head>
+
+Isso vai fazer um degrade de cor do rosa até o roxo em linha reta. Tambem temos.
+
+
+<head>
+<style>
+#teste {
+background-image: radius-gradient(pink, purple);
+}
+</style>
+</head>
+
+Que cria um degrade mas com formato de circulo dentro do objeto.
+
+Backgound-Attachment:
+Fixed - Deixa a imagem de fundo, fixada perante o navegador, se rolarmos a barra para baixo ela vai acompanha até ela desaparecer.
+Scroll - Faz com que a imagem acompanhe o scroll da pagina se ele for pra baixo a imagem vai subindo e se ele for para cima a imagem vai descendo.
+Local - Deixa a imagem fixa mas perante a algum outro objeto eu acho q é isso...
+

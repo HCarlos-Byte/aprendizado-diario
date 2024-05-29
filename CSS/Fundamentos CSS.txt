@@ -1,0 +1,372 @@
+Cascading Style Sheets - CSS - Ele determina com deve ser o layout de um página e como os elementos devem se comportar dentro da página como cores, tamnho...
+Ele não é considerado uma linguagem de programação mas sim uma linguagem de estilo.
+O que podemos criar com CSS: layouts, animações, forma geométricas e desnhos, filtors, contadores.
+Propriedades e Valores, propriedade é a caracteristica de um elemento do html (cor de fundo, largura, altura, espaçamento...), valor define o resultado de uma propriedade e como o navegador deve exibir o estilo.
+Sendo exibida assim: 
+
+propriedade: valor;
+
+para definir um backgroud red por exemplo podemos fazer assim.
+
+background-color:red;
+
+Os dois pontos são utilizados para deparas a propriedade do valor já o ponto e virgula é utilizado para informar que ali estamos finalizando essa propriedade.
+Para inserirmos um CSS na nossa página temos três possibilidades. 
+1 - Fazer diretamente dentro do HTML da seguinte forma.
+
+<h1 style=background-color: red; color: white;>Hello Word!</h1>
+
+que define para o titulo <h1> com um fundo vermelho e uma letra branca. Isso não é muito utilizado por que temos que fazer isso linha a linha oq deixa muito trabalhoso, mas temos algumas situações que esse tipo de CSS pode até ser mais vantajoso já que quando adicionamos diretamente  dentro do HTML ele tem uma prioridade e sobrepoem a feita em um arquivo externo.
+
+2 - CSS interno é uma maneira de colocarmos o CSS tambem dentro do HTML mas dentro da tag <HEAD> que define a página inteira dessa maneira.
+
+<head>
+<style>
+h1 {
+   background-color: red;
+   color: white;
+}
+<style>
+<head>
+
+Dessa maneira aplicamos a mesma edição anterior mas para todos os <h1> isso centraliza a propriedade em um lugar só oq facilita op entendimento e tambem mais rápido de configurarmos o estilo. Por ficar dentro da tag <head> da página o carregamento dela fica muito mais rápido.
+
+3 - CSS externo é uma das maneiras mais utilizadas para estilizar a página ela fica dentro de um arquivo separado da HTML mas segue os mesmos principios da anterior ela define os estilos para todos os seletores da página que tem o mesmo nome que a inserida no CSS.
+Dentro do HTML na tag <head> devemos fazer o link do arquivo externo CSS para que assim ela possa fazer alguma ação dentro do HTML. 
+Dessa forma:
+
+<head>
+<link rel="stylesheet" href="caminho para o arquivo css">
+</head>
+
+Agora no CSS:
+
+h1 {
+   background-color: red;
+   color: white;
+}
+
+Assim temos os mesmos efeitos que o método anterior mas em um arquivo separado, isso é muito bom por que temos um arquivo "mãe" que pode editar vários arquivos HTML sem precisar reescrever o código várias vezes, por ser um arquivo externo ele pode gerar um pouco mais de demora para o carregamento da página mas isso vai da  conexão do cliente.
+Com isso temos um problema maior mas não tão constante que é um pequeno delay para o carregamento do estilo da página oq pode acontecer é a página carregar mas o estilo não, mas isso são questões de milisegundos mas isso pode piorar dependendo da conexão do cliente.
+
+Seletores
+
+Seletor por TIPO nada mais é do que inserir o próprio nome da tag para estilizar ela. por exemplo:
+
+<head>
+<style>
+body {
+    background-color: black;
+}
+h1 {
+   color: red;
+}
+p {
+   color: blue;
+}
+</style>
+</head>
+<body>
+<h1>Hello Word!<h1>
+<p>I'm Carlos.</p>
+</body>
+
+Com isso temos uma corpo da página <body> com o fundo preto, o titulo <h1> com o cor da letra vermelha e um paragrafo <p> com a cor da letra azul, isso vai se repetir para todos os outros elementos <h1> , <p> da página.
+
+Seletor por ID define como se fosse uma digital para aquele elemento, o ID não pode se repetir a não ser que queira colocar o mesmo estilo para vários elementos mas para isso temos outro seletor.
+Segue abaixo exemplo:
+
+<head>
+<style>
+body {
+    background-color: black;
+}
+h1 {
+   color: red;
+}
+p {
+   color: blue;
+}
+#seletorID {
+   background-color: pink;
+   color: white;
+</style>
+</head>
+<body>
+<h1>Hello Word!<h1>
+<p>I'm Carlos.</p>
+<p id="seletorID">How are U?<p>
+</body>
+
+Adicionamos a tag <p> uma propriedade ID isso define que ela é única, não devemos deixar espaço para definir o nome da propriedade e nem utilizar acentos para facilitar no momento de definir o valor para ela. Enfim no exemplo dentro da tag <style> temos o #seletorID ele está apontando que vamos fazer uma edição mas somente nesse ID isso é, mesmo que dentro do arquivo tenhamos mais de um <p> o estilo que for introduzido dentor desse ID é só dele e com isso inserimos uma cor de fundo rosa e um cor para a letra branca.
+
+Seletor por Classe todos os elementos do HTML sustentão o atributo class ela tem a mesma função do atributo ID  mas as class pode ser utilizada para vários elementos e até mesmo de várias páginas HTML. Segue exemplo:
+
+<head>
+<style>
+body {
+    background-color: black;
+}
+h1 {
+   color: red;
+}
+p {
+   color: blue;
+}
+.seletorCLASS {
+   backgrund-color: red;
+   color: white;
+}
+.CLASScor {
+  background-color: blue;
+  color: red;
+}
+.CLASSmaiusculo {
+ text-transform: uppercase;
+}
+</style>
+</head>
+<body>
+<h1>Hello Word!<h1>
+<p>I'm Carlos.</p>
+<h1 class="seletorCLASS">Seletor de Classe</h1>
+<p class="CLASScor CLASSmaiusculo">Teste</p>
+<h1class="seletorCLASS">Seletor de Classe</h1>
+<p class="CLASScor CLASSmaiusculo">Teste</p>
+<p class="CLASScor">Teste</p>
+</body>
+
+Aqui temos três propriedades de class, podemos notar que diferente da ID a class temos um ( . ) no lugar da ( # ) no momento de definir o estilo. Temos uma <h1> com a propriedade seletorCLASS que está definindo que ali vamos ter uma cor de fundo vermelha e a cor da letra branca, <p> com a propiedade CLASScor e CLASSmaiusculo aqui temos duas class em um a só mas se notarmos as tags <p> que tem a CLASSmaiusculo ficaram em caixa alta, pórem isso não interferiu no estilo de todas elas ter a CLASScor que está definindo um fundo azul e uma cor para letra vermelha.
+
+Seletor universal ele é identificado com ( * ) e tem a função de estilizar todos os elementos do HTML. Segue Exemplo:
+
+<head>
+<style>
+body {
+    background-color: black;
+}
+h1 {
+   color: red;
+}
+p {
+   color: blue;
+}
+* {
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+<h1>Hello Word!<h1>
+<p>I'm Carlos.</p>
+</body>
+
+Aqui definimos para todos o elementos uma fonte em negrito indepentemente de seus elementos ID ou class ele define um estilo para todos os elementos da página.
+
+Seletor de Atributo com o auxilio das chaves [] podemos estilizar os atributos de uma tag ou apenas tag que tenham aquele atributo, Exemplo Abaixo:
+
+<head>
+<style>
+[title="Streaming"] {
+color: black;
+}
+[title="Streaming Spotify"] {
+color: white;
+}
+[title~="Streaming"] {
+background: red;
+}
+[title|="Streaming"] {
+background: blue;
+}
+</style>
+</head>
+<body>
+<nav>
+<ul>
+<li title="Streaming">Netflix</li>
+<li title="Streaming Spotify">Spotify</li>
+<li title="Streaming-Prime">Prime</li>
+<li title="Disney">Disney Plus</li>
+</ul>
+</nav>
+</body>
+
+Com isso Temos uma lista não ordenada que tem atributos title diversos, dentro da tag style configuramos algumas delas. Quando utilizamos o simbolo de ( = ) definimos que todos os title que tiverem exatamente aquele valor tem o estilo escolhido, podemos ver que estilizamos tambem um title com um valor com espaço e o estilo dele só foi aplicado dentro daquela em expecifico.
+Quando usamos ( ~= ) estamos dizendo que o valor pode ter oq foi determinado no caso de um nome composto por exemplo, acima utilizamos o valor Streaming e isso indica que todas os title que tiverem a palavra Streaming vão ter aquele estilo.
+Quando usamos ( |= ) estamos falando que aquele valor expecifico mas que for acompanhado com um ( - ) hifen vai receber a estilização.
+Notamos que o title="Disney" não recebeu nenhuma edição isso é porque ele não compriu nenhum dos requsitos apontados.
+Podemos tambem utilizar tambem o seletor para identificar um prefixo e um sufixo do atributo com os caracteres ( ^ ) e ( $ ) respectivamente.
+Para procurar determinado valor que está em qualquer parte do valor do atributo podemos utilizar o ( * ) que vai identificar o valor inserido dentro do atributo que definimos.
+
+Agrupamento de Seletores
+Podemos agrupar os seltores usando uma ( , ) por exemplo:
+
+<head>
+<style>
+h1, p {
+color: red;
+}
+p#seletorID {
+background: blue;
+color: black;
+}
+</style>
+</head>
+<body>
+<h1>Hello Word!<h1>
+<p>I'm Carlos.</p>
+<p id="seletorID">How are U?<p>
+</body>
+
+Aqui estamos dizendo que todos os <h1> e <p> tem que ter a cor de letra vermelha, porem o <p> com id seletorID tem que ficar com a cor de fundo azul e a cor da letra preta. Se por algum motivo tivermos um <h1> com o id seletorID ele não vai ser estilizado porque indicamos os <p> para receberem a cor de fundo e cor da letra.
+Temos algumas divisões para os seletores são eles ( > ) representa um combinador filho, ( + ) representa um combinador irmão adjacente, ( ~ ) representa o irmão em geral. Segue exemplos:
+
+<head>
+<style>
+div > p {
+background: red;
+}
+div + p {
+backgroun: blue;
+}
+div ~ p {
+color: yellow;
+}
+</style>
+</head>
+<body>
+<div>
+     <p>Filho</p>
+     <p>Filho<p>
+     <span>
+	<p>Neto<p>
+      </span>
+</div>
+<p>Irmão adjacente</p>
+<p>Irmão geral</p>
+</body>
+
+Aqui temos o um exemplo de divisão de "parentesco dos combinadores" usando o div > p estamos informando que queremos dar estilo a todas as tags <p> mas notamos que o <p> que está dentro da tag <span> não vai ser estilizada por que ela é considerada uma neta do <div> e não uma filha.
+Para ser uma irmã da div temos que ter uma tag na mesma coluna de identação da mesma é oq ocorre com a tag <p> que está fora da <div> porem com o ( > ) só conseguimos selecionar a primeira tag irmã da <div> excluindo a segunda tag <p> e para isso temos o ( ~ ) que vai editar todos os irmão da div que tenham a tag <p>.
+
+Dimendionamento e Espaçamento
+width - ela define a largura do objeto  que estamos dando o estilo. Segue exemplo:
+
+<head>
+<style>
+div{
+backgroud: red;
+width: 200px;
+}
+</style>
+</head>
+<body>
+<div>
+     <p>Largura</p>
+</div>
+</body>
+
+Aqui definimos que a largura do nosso objeto div está ocupando um espaço em tela de 200px.
+
+<head>
+<style>
+div{
+backgroud: red;
+height: 200px;
+}
+</style>
+</head>
+<body>
+<div>
+     <p>Altura</p>
+</div>
+</body>
+
+Aqui já estamos definindo a altura com a propriedade height de 200px, se juntarmos isso ao width formamos um quadrado na tela.
+
+Temos tambem  palavras que definem valores para o CSS como por exemplo:
+
+<head>
+<style>
+div{
+backgroud: red;
+height: 200px;
+width: auto;
+}
+</style>
+</head>
+<body>
+<div>
+<p>dawpidubwapdawbdpawdbawpdbawpdawbdpawdbawpdbajwpdaijbwdpawjdbdpaijwbd
+</p>
+</div>
+</body>
+
+Aqui temos uma altura definida de 200px porem temos uma frase muito longa dentro dessa caixa e é ai que entramos com o width: auto que define uma largura automatica apartir do que está preenchendo a caixa. Ainda em largura e altura temos como definir uma altura/largura maxima e minima para o objeto, dessa maneira:
+
+<head>
+<style>
+div{
+backgroud: red;
+min-height: 200px;
+max-heigth: 400px;
+min-width: 200px;
+max-width: 400px;
+}
+</style>
+</head>
+<body>
+<button>
+</button>
+</body>
+ 
+Assim temos uma largura e altura maxima de 400px e uma minima de 200px, isso ajuda muito no momento da responsividade de uma página mas ainda vamos ver isso.
+
+Margin
+Aqui deifinimos uma margin ela é a parte externa do objeto assim definimos:
+
+<head>
+<style>
+div {
+backgroud: red;
+}
+#margin {
+background: purple;
+margin-top: 10px;
+margin-right: 10px;
+margin-bottom: 10px;
+margin-left: 10px
+</style>
+</head>
+<body>
+<div>
+</div>
+<div id="margin">
+</div>
+</body>
+
+Aqui estamos definindo as margens de cima, direita, baixo, esquerda respectivamente de 10px em relação a página ou de outro objeto. Mas podemos fazer tudo isso em uma unica linha com uma propriedade só ela é ( margin: 10px; ) isso por si só já define para todas as partes uma margem de 10px, podemos tambem definir várias margens em uma linha só com ( margin: 20px 40px 50px 10px; ) assim estamos colocando diferentes margens para todas as partes em uma unica linha lembrando que ela funciona de maneira horaria (cima direita baixo esquerda).
+
+Padding
+Enquanto a margin separa objetos de outros objetos o padding separa o conteudo do objeto mas ainda continua com os mesmos conceitos da margin.
+
+<head>
+<style>
+#padding {
+background: purple;
+padding-top: 10px;
+padding-right: 10px;
+padding-bottom: 10px;
+padding-left: 10px
+</style>
+</head>
+<body>
+<div id="padding">
+</div>
+</body>
+
+Assim separamos o conteudo do objeto em 10px na parte de cima, direita, baixo, esquerda respectivamente. Tambem podemos definir um padrão com ( padding: 10px; ) e tambem vários padding com ( padding: 20px 40px 50px 10px; ).
+Para ambos margin e padding temos algumas palavras que podem ser utilizadas para dar estilo como ( auto ) que define um tamaho automatico para o objeto ou conteudo.
+
+

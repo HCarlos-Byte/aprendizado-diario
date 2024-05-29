@@ -1,0 +1,14 @@
+Entendendo o funcionamento do protocolo HTTP
+    URL é composta pelo IP e pelo Path ou Querry String.
+    IP = o dominio do nosso site
+    Path = (caminho de identificação do recurso)
+    Querry String = é composto por um ponto de interrogação e tudo que vier apos vai ser uma estrutura de chave e valor ou seja uma solicitação com o valor desejado caso queira concatenar outro argumento podemos adicionar um (&) e continuar com mais uma solictiação de chave e valor.
+
+    Request Method: É o que queremos fazer com essde recurso dado pelo Path, temos diversas requisições dentre elas.
+    GET = O servidor esta entendo que quero buscar um recurso
+    POST = O servidor vai entender que quero inserir uma nova informação
+    PUT = O servidor vai entender que queremos atualizar algoS
+    DELETE = O servidor vai entender que quero deletar algo
+
+    Request e Renponse Headers: É a configuração aceitas no site
+

@@ -1,0 +1,31 @@
+Display: block;
+Exibi os elementos em blocos ocupando uma linha inteira, algumas tags já tem essa propriedade como padrão como ( div, p, nav ).
+
+Display: inline;
+Ocupa apenas o tamanho do conteudo podendo ocupar a mesma linha, tags como ( span, b, em ) já tem essa propriedade padrão dentro do html.
+
+Display: inline-block;
+Tem semelhança com o display inline com o detalhe que com inline-block podemos alterar a altura e largura do elemento, o que não é possivel com o display inline.
+
+
+Display: none;
+Esconde elementos visualmente porem não o tira do html da pagina, caso essa propriedade for adiconada dentro de uma tag pai ela vai esconder todos os seus elementos filhos.
+
+Visibility: hidden;
+Deixa o elemento invisivel, ele some porem ainda mantem o espaço que o elemento ocupa mostrando que tinha alguma coisa ali.
+
+Vertical-align:
+Essa propriedade é responsavel por alinhar verticalmente nossos elementos, tendo algumas variantes.
+|
+vertical-align: middle; alinha no meio
+vertical-align: baseline; alinha em baixo ignorando as "perninhas" do ( p, q, ç ) por exemplo
+vertical-align: text-bottom; alinha em baixo não ignora as "perninhas" das letras
+vertical-align: text-top; alinha em cima
+
+Display: flex;
+O flexbox é uma forma de organizar os elementos em uma página dentro de containers e de forma dinamica, organizando os elementos em uma dimensão: ou horizontalmente (as linhas), ou verticalemte (em colunas)
+
+Display Grid;
+O grid layout vai organizar os elementos das nossas páginas em duas dimenções: de forma horizontal e vertical, definindo linhas e colunas para que os conteudos da página sejam posicionados.
+
+

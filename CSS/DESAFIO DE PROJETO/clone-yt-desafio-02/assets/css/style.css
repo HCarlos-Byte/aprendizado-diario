@@ -1,0 +1,194 @@
+@import url(../css/reset.css);
+
+#cabecalho {
+    display: inline-flex;
+    border-bottom: 1px solid #cccccc;
+    align-items: center;
+    justify-content: space-between;
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+#cabecalho .esquerda {
+    display: flex;
+    justify-content: space-between;
+    width: 9.06rem;
+    margin-left: 1.5rem;
+}
+#cabecalho .esquerda #menu {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+#cabecalho .esquerda #logo {
+    width: 5.62rem;
+    height: 1.25rem;
+}
+/*CABEÇALHO CENTRO*/
+#cabecalho .centro {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid #CCC;
+    border-radius: 20px;
+    width: 25.31rem;
+    height: 2.0rem;
+}
+#cabecalho .centro input {
+    height: 100%;
+    flex-grow: 6;
+    border: none;
+    outline: 0;
+    padding: 0.5rem;
+    position: relative;
+}
+#cabecalho .centro button {
+    height: 100%;
+    flex-grow: 1;
+    border: none;
+    border-left: 1px solid #CCC;
+    background: #F8F8F8;
+}
+
+/*CABEÇALHO LADO DIREITO*/
+#cabecalho .direita {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.5rem;
+    margin-right: 1.5rem;
+}
+#cabecalho .direita #notificacao {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+#cabecalho .direita #video {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+#cabecalho .direita #perfil {
+    width: 2.12rem;
+    border-radius: 50%;
+}
+
+/*PARTE PRINCIPAL*/
+#principal {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+#principal #video-principal{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+#principal #video-principal iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+}
+#detalhes {
+    grid-row-start: 4;
+    grid-column-start: 2;
+}
+#detalhes section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.8rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+#principal section #canal {
+    display: flex;
+    gap: 0.50rem;
+    align-items: center;
+    cursor: pointer;
+}
+#principal section #canal img {
+    width: 2.62rem;
+    border-radius: 50%;
+}
+#principal section #inscrever {
+    background-color: red;
+    color: white;
+    text-transform: uppercase;
+    width: 8rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.20rem;
+    cursor: pointer;
+}
+#principal section #avaliacao {
+    display: flex;
+    justify-content: flex-end;
+    width: 7.81rem;
+    height: 2.25rem;
+}
+#principal section #avaliacao #like {
+    display: flex;
+    align-items: center;
+    flex-grow: 2;
+    padding-left: 0.25rem;
+    border: 0;
+    border: 1px solid #CCC;
+    border-radius: 1rem 0 0 1rem;
+    cursor: pointer;
+}
+#principal section #avaliacao #deslike {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    padding-left: 0.25rem;
+    border: 0;
+    border: 1px solid #CCC;
+    border-radius: 0 1rem 1rem 0;
+    cursor: pointer;
+}
+#principal section #compartilhar {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.20rem;
+    cursor: pointer;
+}
+#principal section #download {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.20rem;
+    cursor: pointer;
+}
+#principal #descricao {
+    display: block;
+    width: 31.87rem;
+}
+#principal #descricao h2 {
+    margin-bottom: 1rem;
+}
+aside {
+    grid-column-start: 3;
+    grid-column-end: 5; 
+    margin-top: 1.75rem;
+    border-left: 1px solid #cccccc;
+    padding-left: 1.25rem;
+}
+aside section img {
+    width: 160px;
+    height: 90px;
+}
+aside section img {
+    border-radius: .5rem;
+}
+aside section {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+aside section div {
+    padding-left: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

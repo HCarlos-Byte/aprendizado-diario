@@ -1,0 +1,6 @@
+<form>
+Sendo básicamente uma tag de envio de informação para um servidor em forma de formulario que quando criada com a tag <input type="text" name"user"> por exemplo cria uma caixa de texto para colocar o nome do usuario seguindo a mesma logica para type="number", type="password" para uma caixa numerica e de senha respectivamente, type="" é um atributo da tag <input> podemos adicionar tambem vários outros atributos tanto para <input> quanto para <form>.
+
+<input>
+Ela em sozinha não tem muita funcionalidade pórem em conjunto com outros atributos como type="text", number, range, color, date, submit, password, entre várias outras torna a tag com muitas váriações de possibilidades de ações para executar dentro do site.
+Em alguns casos podemos definir valores minimos e maximos dentro da tag por exemplo (<input type="number" min="0" max="50">) essa tag está definindo um caixa numerica e com o uso dos atributos min="" define o valor minimo aceitavel no caso 0 e max="" definindo o valor maximo aceitavel no caso 50.

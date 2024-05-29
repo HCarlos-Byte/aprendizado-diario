@@ -1,0 +1,73 @@
+Conceitos de flexbox
+
+Permite posicionar os elementos dentro de outro elemento ( container ) elementos dentro do container são chamados de itens.
+Permite trazer para o container a possibilidade de alterar a largura/altura ordem dos itens e aproveitar o espaço disponivel dentro do elementeo da melhor forma.
+
+display: flex; / display: inline-flex;
+
+Quando colocamos a propriedade ( display: flex; ) para o container os itens dentro do mesmo vão ficar um ao lado do outro respeitando margin e padding caso adicionado, já quando colocamos a propriedade ( display: inline-flex ) para o container isso faz com que elementos que sejam irmão desse container fique na mesma linha que o primeiro.
+
+flex-direction
+
+A propriedade flex-direction define o eixo principal do container, ela segue uma regra simples para organizar os itens: horizontalmente ( em linhas ) verticalmente ( em colunas ).
+
+flex-direction: row;
+Caso o eixo principal ( main axis ) seja na horizontal o eixo transversal ( cross axis ) vai ficar no vertical.
+
+flex-direction: column;
+Caso o eixo principal ( main axis ) seja na vertical o eixo transversal ( cross axis ) vai ficar na horiontal .
+
+flex-direction: row-reverse;
+Inverte a ordem dos itens da direita para esquerda, mas mantem a mesma regra de horizontal e vertical.
+
+flex-direction: column-reverse;
+Inverte a ordem dos itens de baixo para cima, mas mantem a mesma regra de vertical e horizontal.
+
+flex-wrap: wrap;
+Caso tenhamos vários itens dentro de um container e esses itens estejam ultrapassando o tamanho do container podemos usar essa propriedade para continuar com a propriedade flex mas criando uma quebra de linha tanto na ( row, column ) para caber dentro do container.
+Temos duas outras propriedades que dentro do flex-wrap elas são ( no-wrap ) e ( wrap-reverse ) a primeira já é o valor padrão da propriedade flex-wrap e a segunda define uma inversão na quebra de linha.
+
+Temos tambem a propriedade flex-flow uma ( short hand ) da propriedade ( flex ) nela podemos definir todas as propriedades acima em uma unica propriedade.
+
+justify-content:
+Alinha os itens no eixo principal ( main axis ) dentro do container, temos várias variantes dessa propriedade conforme abaixo.
+
+justify-content: flex-start;
+Ela é o valor padrão dessa propriedade, alinhando no inicio da propriedade container.
+
+justify-content: flex-end;
+Alinha os itens no fim da propriedade container.
+
+justify-content: center;
+Alinha os itens no centro da propriedade container.
+
+justify-content: space-between;
+Deixa o primeiro e o ultimo item nos cantos e os demais itens com espaços proprocionais entre eles.
+
+justify-content: space-around;
+Tem o mesmo conceito do space-between porem ele pega metada do valor do espaçamento entre o primeiro e o ultimo item e joga para o dar um espaço no inicio e no fim do container.
+
+justify-content: space-evenly;
+Da para todos os itens o mesmo valor de espaço entre todos os itens incluindo nas estremidades.
+
+align-itens:
+Alinha os itens dentro do eixo transversal ( cross axis ) temos algumas variantes para essa propriedade como.
+
+align-itens: normal;
+É o valor padrão da propriedade.
+
+align-itens: flex-star;
+Alinha os itens no inicio do container.
+
+align-itens: flex-end;
+Alinha os itens no final do container.
+
+align-itens: center;
+Alinha os itens no centro do container.
+	
+align-itens: base-line;
+Alinha os itens tendo como referencia a base dos texto nos itens.
+
+align-itens: stretch;
+Os itens se esticam ao longo de todo o eixo transversal do container.
+

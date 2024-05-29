@@ -1,0 +1,124 @@
+@import url(/assets/css/reset.css);
+
+#cabecalho {
+    display: inline-flex;
+    border-bottom: 1px solid #cccccc;
+    align-items: center;
+    justify-content: space-between;
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+#cabecalho .esquerda {
+    display: flex;
+    justify-content: space-between;
+    width: 9.06rem;
+    margin-left: 1.5rem;
+}
+#cabecalho .esquerda #menu {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+#cabecalho .esquerda #logo {
+    width: 5.62rem;
+    height: 1.25rem;
+}
+#cabecalho .centro {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid #CCC;
+    border-radius: 20px;
+    width: 25.31rem;
+    height: 2.0rem;
+}
+#cabecalho .centro input {
+    height: 100%;
+    flex-grow: 6;
+    border: none;
+    outline: 0;
+    padding: 0.5rem;
+    position: relative;
+}
+#cabecalho .centro button {
+    height: 100%;
+    flex-grow: 1;
+    border: none;
+    border-left: 1px solid #CCC;
+    background: #F8F8F8;
+}
+#cabecalho .direita {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.5rem;
+    margin-right: 1.5rem;
+}
+#cabecalho .direita #notificacao {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+#cabecalho .direita #video {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+#cabecalho .direita #perfil {
+    width: 2.12rem;
+    border-radius: 50%;
+}
+main {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    padding: 1.5rem;
+    background-color: hwb(0 80% 20% / 0.137);
+}
+main section {
+    display: inline-flex;
+    padding: 16px;
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+}
+main section img {
+    width: 100%;
+    border-radius: .5rem;
+}
+main section div {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: start;
+}
+main section div div {
+    display: flex;
+    flex-direction: column;
+}
+main section div img {
+    width: 2.625rem;
+    border-radius: .5rem;
+    margin-right: 10px;
+}
+main section a {
+    width: 100%;
+    border-radius: .5rem;
+}
+aside {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    text-transform: capitalize;
+    margin: 1.5rem 1.5rem auto 1.5rem;
+}
+aside div {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-self: center;
+    justify-self: start;
+    margin: 1.375rem;
+}
+aside h3 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    margin-left: 1rem;
+}

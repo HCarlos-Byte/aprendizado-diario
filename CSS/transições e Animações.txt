@@ -1,0 +1,32 @@
+Plano carteziano, é uma figura imaginaria de duas linhas uma na horizontal e outra na vertical chamados de ( x, y).
+Eixo X : é o eixo horizontal chamado eixo das abscissas.
+Eixo Y : é o eixo vertical  chamado eixo das ordenadas.
+Ambos os eixos aceitam valores negativos e positivos.
+
+translate() 
+Serve para aplicarmos uma função de mover um objet de sua posição inicial para outra que aplicamos dentro da propriedade fazemos isso utilizando a propriedade transform: translate(x, y) podemos inserir valores para subistituir as letras x e y o que afetara sua posição conforme os valores inseridos dentro do plano carteziano.
+
+rotate()
+Como o proprio nome diz ele vai rotacionar o objeto tanto para o sentido horario quanto para o antihorario, para fazer essa rotação utlizamos valores em (deg)  que significa graus. Utilizando a propriedade transform: rotate(90deg) ele vai dar uma certa rotacionada ao objeto.
+
+rotateX() e rotateY()
+Com essa propriedade estamos rotacionando o objeto no eixo x e y do plano carteziano dando um efeito 3d para o objeto.
+
+scale()
+Com essa propriedade podemos diminuir ou aumentar o tamnho de um obejto utilizando dessa maneira transform: scale(2, 2) dessa maneira vamos pegar o valor que adicionamos anteriormente como valor padrão do tamanho do objeto e mutiplicamos pelo valor que adicionamos dentro de scale.
+
+matrix()
+Essa propriedade resume todas as outras propriedades em uma só porem pode ficar um pouco confuso no inicio.
+
+perspective()
+Perpectiva podemos dar o efeito de 3d para os objetos se unirmos a propriedade (translate: 2,0) com a propriedade (perspective: 400px ) junto a um valor que definimos conforme a nescessidade sendo que quanto menor para a perpective o valor maior é o efeito 3d do objeto. Com isso tambem temos a propriedade perpective-origin e com ela podemos definir a Perpectiva com  alguns valores padroes como initial, unset, revert entre outros.
+
+Eixo Z
+Quando trabalhamos com perspectivas temos tambem o eixo z que é o eixo responsavel pela distancia do objeto sendo que valores negativos se tornam mais longes e postivos mais proximos.
+
+transform-origin
+Com essa propriedade meio que rotacionamos o objeto em um eixo padrão defido pelo navegador como top-bottom, top-left entre outros. Isso nos da um efeito de que uma das pontas está presa e as outras estão soltas.
+
+transition
+É uma shorthand de outras propriedades de transição sendo elas (property, duration, timing-funcrtion, delay), property define para qual ou quais propriedades queremos fazer a transição, duration define qual o tempo de duração para a transição, timing-function tem alguns valores pré-definidos sendo elas (ease, linear, ease-in, ease-out, ease-in-out) um valor que podemos definir conforme a necessidade é o cubic-buzier() que aceita outros valores para definimos como quisermos a transição, já o delay é o tempo que vai demorar para a reação do objeto depois que interagirmos com ele.
+

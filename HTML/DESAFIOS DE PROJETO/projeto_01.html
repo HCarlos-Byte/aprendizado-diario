@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Primeiro Passos HTML</title>
+    <style>
+        body {
+            background-color: #606060;
+            font-family: Arial, sans-serif;
+            color: black;
+        }
+        h1 {
+            font-size: 40px;
+        }
+        .espaco{
+            margin-bottom: 400px;
+        }
+        ul {
+            list-style-type: none;
+        }
+        #container {
+            margin: auto 100px auto 100px;
+            padding: 10px 10px 10px 10px;
+            overflow: hidden;
+            height: 380px;
+        }
+        img {
+            float: right;
+            margin-left: 10px;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Primeiro Passos HTML</h1>
+    <hr>
+    <nav>
+    <ul>
+        <li><a href="#01">Internet - Como surgiu?</a></li>
+        <li><a href="#02">Client x Server</a></li>
+        <li><a href="#03">Como funciona o HTML</a></li>
+        <li><a href="#04">Funcionamento das TAGS</a></li>
+    </ul>
+    </nav>
+    <div id="container">
+    <div id="01">
+        <h2>Internet - Como surgiu?</h2>
+        <p class="espaco">Podemos dizer que o primeiro meio de comunicação foi o Telegrafo lá em 1958 sendo ultilizado o método de código morse. Avançando 10 anos em 1969 a ARPANET lançou um sistema de comunicação em pacotes, enviados um a um e que permitia multiplos destinos. A primeira conexão foi feita em 29/10/1969 entre a univerdidade da california  e o instituto de stanford sendo envia a plavra "LOGIN", mas só chegando "LO" sendo assim a primeira falha na comunicação, podemos dizer que a sigla "LO" tambem foi a primeira palavra a circular pela internet. Com a união de Vinton Cerf e Robert Kahn criaram o protocolo TCP/IP inplantando isso na ARPANET criando assim micro-redes como (MILNET, NSFNET, NASA, entre outras). Em 1989, Tim Berners-Lee viu a oportunidade de unir hipertexto com TCP/IP e criar a World Wide Web (WWW) O primeiro navegador da internet, publicando a primeira página Web em 06 de Agosto de 1991 <a href= "http://info.cern.ch/" target="_blank"> clique aqui para conferir</a>
+        </p>
+    </div>
+    <div id="02">
+        <h2>Client x Server</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcKBVSAFoJ9jKnOkMCtPX3q_WilAA31YBTGA&usqp=CAU">
+        <p>Basicamente o client é quem consome e o server é quem fornece. O Client quando entra em um site com uma conexão estavel de Internet solicita os arquivos para o Server e ele retorna para o Client os arquivos solicitados. O client tem que ter uma conexão com internet já o server não necessariamente precisa dessa conexão já que ele pode ser um servidor local. Podendedo existir servidores de Arquivos, Segurança, Streaming, Web, E-mail. Sistema operacional para servidores são totalmente diferente dos que usamos nos dispositivos tendo como sitemas (Windows Server, Ubuntu, CentOS, Debian, Fedora, Oracle) e tambem temos os servidores Web com (Apache, NNginx). A comunicação entre Sistema Operacional x Sevidores Web ocorre da seguinte maneira quando o Sistema operacional identifica uma requisição de um client e ele manda o Servidor Web devolver a resposta com o HTML, CSS, Javascript, Imagens, Texto... Tudo isso ocorre com um Hardware que pode ser até mesmo um PC de casa mas obviamente esse servidor será limitado a grandes tarefas.</p>
+        <p class="espaco"></p>
+    </div>
+    <div id="03">
+        <h2>Como funciona o HTML</h2>
+        <p>O HTML, que significa HyperText Markup Language (Linguagem de Marcação de Hipertexto), é a espinha dorsal da web. Ele fornece a estrutura básica para a criação de páginas da web, permitindo que os navegadores exibam conteúdo de maneira organizada e formatada. Sua estrutura básica é:</p>
+        <img src="https://i0.wp.com/kenzie.com.br/blog/wp-content/uploads/2021/02/estrutura-html-5.jpg?resize=549%2C243&ssl=1">
+        <p>Sendo o 'head' a cabeça do site bádicamente tudo que vai ser carregado antes do site em si. E o 'body' o corpo da página tudo que você vai ver na página como textos, imagens, videos, etc.</p>
+        <p class="espaco"></p>
+    </div>
+    <div id="04">
+        <h2>Funcionamento das TAG'S</h2>
+        <p class="espaco">Tags são palavras ou códigos entre colchetes angulares, como "<>". Elas são usadas para identificar elementos específicos em um documento HTML. A maioria das tags HTML tem duas partes: uma tag de abertura e uma tag de fechamento. A tag de abertura é usada para iniciar o elemento e é seguida pelo nome da tag, como "<>" para um parágrafo. A tag de fechamento é semelhante, mas inclui uma barra antes do nome da tag, como "/". As tags de fechamento indicam onde o elemento termina. O navegador interpreta as tags HTML ao carregar uma página e renderiza o conteúdo de acordo com as instruções fornecidas pelas tags. Isso inclui a formatação do texto, a exibição de imagens, a criação de links clicáveis e a organização da estrutura da página.</p>
+    </div>
+</div>
+</body>
+</html>

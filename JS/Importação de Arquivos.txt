@@ -1,0 +1,24 @@
+Criando gets e prints
+    gets - pega uma leitura como um input
+
+    function gets(){
+        return 10;
+    }
+
+    print - podemos comparar com um console.log()
+
+    function print(texto){
+        console.log(texto);
+    }
+
+Importando função
+
+    Utilizamos a função (require) juntamente com o nome do arquivo para podermos importar funções de outros arquivos. Assim meio que preparando o local para onde vamos importar as funções.
+
+    const funcao = require(.../local/do/arquivo)
+
+    Utilizamosa função (module.exports) juntamente de quais funções vamos exportar do arquivo de origem, assim indicando quais vão ser importadas pelo (require) no arquivo de destino.
+
+    module.exports = {gets, print}
+
+

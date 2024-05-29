@@ -1,0 +1,77 @@
+Meta tag viewport:
+<meta name="viewport" content="width=device-width>
+Essa tag sobrescreve a configuração padrão do navegador para largura da janela.
+
+<meta name="viewport" content="initial-scale=1">
+Essa tag define o zoom inicial da pagina
+
+<meta name="viewport" content="heigth=1">
+define a altura especifica para a viewport
+
+<meta name="viewport" content="minumum-scale=1">
+define o nivel minimo de zoom
+
+<meta name="viewport" content="maxumum-scale=2">
+define o nivel maximo de zoom
+
+<meta name="viewport" content="user-scalable=no">
+impede que o usuario aplique zoom na pagina caso tenha o valor definido como no
+
+Podemos usar essa tags em uma só tag utilizando a ( , ) vigula. Assim temos:
+<meta name="viewport" content="width=device-width, initial-scale=1, heigth=1, minumum-scale=1, maxumum-scale=2, user-scalable=no>
+Devemos evitar utilizar o minmum/maxmum no nosso site para que não estajamos bloqueando a acessibilidade do usuario.
+
+Media queries
+Esse recurso que permite aplicar propriedade do css somente para algumas regras de tipo de midia especificos.
+Dispositivos moveis ( verticais ) = estilos nomais
+Dispositivos moveis ( horizontais ) tablets ( verticais ) = @media (min-width:768px){}
+tablets ( horizontais ) notebooks normais =  @media (min-width:1024px){}
+monitores = @media (min-width:1200px){}
+
+Estrura media queries
+
+@media screen(min-width:320px)and(min-width:768px){
+    h1{
+        color:red;
+    }
+}
+
+Explicação:
+at-rule = @media
+media type = screen
+media feature (min-width:320px)
+operator = and
+media feature (min-width:768px)
+
+Se o conteudo passar desse filtro ele vai dar uma cor vermelha para todos os h1 para vermelho
+
+AT-RULE
+O caracter ( @ ) arroba dentro de um css diz que o que vem a seguir é uma regra para o site.
+Sabendo disso temos ( @media ) essa regra é usada para identificar o tipo de mídia que uma página está sendo visualizada, informando os recursos que esse tipo de mídia suporta e os operadores que podem ser combinados para misturar algumas condições.
+
+MEDIA TYPE 
+define o tipo de mídia que os estilos CSS devem ser aplicados
+@media all = corresponde a todos os dispositivos.
+@media print = corresponde a documentos que são uma pré-vizualização de impressão, ou em qualquer mídia que será voltada para imprimir.
+@media screen = corresponde a dispositivos com tela integrada.
+@media speech = correponde a dispositivos que leem o conteúdo de forma audivel, como um leitor de tela por exemplo.
+
+MEDIA FEATURES
+configura comquais recursos de mídia se quer combinar para aplicar determinados estilos.
+@media screen min-width/min-height/max-width/max-height/width/height = detecta a largura e altura da viewport.
+@media screen orientation: detecta se o dispositivo está em modo retrato ou paisagem. Que por sua vez tem os valores ( portrait e landscape ) para retrato e paisagem.
+@media screen hover: indica que a página está sendo acessada através de um mecanismo de ponteiro, como um mouse. É usada para aplicar estilos quando um elemento é destacado pelo cursor do mouse, por exemplo alterar a cor de fundo de um botão quando o cursor do mouse passa por cima dele.
+@media screen pointer: detecta quão preciso é o ponteiro (grosso, fino, etc), ajudando a detectar touchscreen, mouse, etc. Que tem os valores ( fine, coarse, none ) sendo o fine um mouse ou trackpad, coarse um dispositivo touchscreen, none para usuarios que não possui um dispositivo de "apontamento", ou seja está navegando por meio de um sistema de comando de voz.
+
+OPERATOR
+É possível combinar, através de operadores lógicos, as media features para atender as condições para aplicar os estilos
+@media screen NOT (min-width: 320px) NOT (max-width: 768px): Nega as condições aplicadas, invertendo todo o significado do media query.
+@media screen AND (min-width: 320px) AND (max-width: 768px): deve atender a todas media features (recursos de mídia);
+@media screen OR (min-width: 320px) OR (max-width: 768px): deve atender, no mínimo, uma das media features (recursos de mídia);
+
+BREAKPOINT MEDIA QUERIES
+• Smartphones (portrait e landscape): 320px a 480px 
+• Tablets: 768px a 1024px 
+• Laptops e desktops: 1024px a 1440px 
+• Telas maiores: 1440px e acima
+

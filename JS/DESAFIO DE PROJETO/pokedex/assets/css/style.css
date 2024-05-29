@@ -1,0 +1,179 @@
+@import url(reset.css);
+body {
+    background-color:rgb(214, 211, 211)
+}
+#content {
+    padding: 16px;
+}
+#content #titulo{
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+}
+#content #container-pokemon {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(1fr);
+    gap: 10px; 
+    flex-wrap: wrap;
+}
+
+/* Estilo Containers Pokemon*/
+#content #container-pokemon #pokemon {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 138.75px;
+    border-radius: 15px;
+}
+#container-pokemon #pokemon .pokemon-title{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+}
+#container-pokemon #pokemon .pokemon-title{
+    color: rgba(255, 255, 255, 0.5);
+}
+#container-pokemon #pokemon .resumo{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+
+}
+#container-pokemon #pokemon .resumo .tipos{
+    text-align: center; 
+    width: 80px;
+}
+#container-pokemon #pokemon .resumo .tipos .tipo{
+    filter: brightness(1.1);
+    border-radius: 40px;
+    margin-bottom: 6px;
+}
+#container-pokemon #pokemon .resumo .img{
+    object-fit: contain;
+    width: 81px;
+    height: 100%;
+}
+#container-pokemon #pokemon .resumo .img img{
+    width: 81px;
+    height: 81px;
+}
+
+/*Botão de Paginas*/
+#pagina {
+    display: flex;
+    justify-content: center;
+    margin: 12px;
+}
+#pagina #carregarMais{
+    color: #fff;
+    font-size: 1rem;
+    background-color: #6c79bd;
+    border: none;
+    border-radius: 40px;
+    width: 120px;
+}
+
+/*Cor po Classe de Pokemon*/
+.fighting{
+ background-color: #CE4069;}
+.psychic{
+ background-color: #F97176;}
+.poison{
+ background-color: #AB6AC8;}
+.dragon{
+ background-color: #096DC3;}
+.ghost{
+ background-color: #5269AD;}
+.dark{
+ background-color: #5B5265;}
+.ground{
+ background-color: #D97746;} 
+.fire{
+ background-color: #FE9C55;}
+.fairy{
+ background-color: #EC90E7;}
+.water{
+ background-color: #4D90D6;}
+.flying{
+ background-color: #8FA8DE;}
+.normal{
+ background-color: #9099A2;}
+.rock{
+ background-color: #C9B68B;}
+.electric{
+ background-color: #F4D23B;}
+.bug{
+ background-color: #90C02C;}
+.grass{
+ background-color: #65BC5E;}
+.ice{
+ background-color: #73CEBF;}
+.steel{
+ background-color: #5B8EA1;}
+
+/*media quiere*/
+@media screen and (max-width:329px){
+    #content #container-pokemon {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+        
+    }
+    .pokemon {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+        height: 138.75px;
+        border-radius: 15px;
+    }
+}
+@media screen and (min-width: 330px) and (max-width:576px){
+    #content #container-pokemon {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+        
+    }
+    .pokemon {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+        height: 138.75px;
+        border-radius: 15px;
+    }
+}
+@media screen and (min-width: 577px){
+    body {
+        display: flex;
+        justify-content: center;
+    }
+    #content {
+        width: 605px;
+    }
+    #content #container-pokemon {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+        
+    }
+    .pokemon {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+        height: 138.75px;
+        border-radius: 15px;
+    }
+}

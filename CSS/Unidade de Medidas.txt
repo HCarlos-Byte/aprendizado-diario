@@ -1,0 +1,27 @@
+Unidade de Medidas Absolutas
+
+<integer> Valores inteiros
+<number> Valores decimais
+<percentage> Valores que representam uma função de algum outro valor
+<dimension> Valores numericos com un. de medida atrelada como:
+|- <length> Representam distancias (px,em, vw, in)
+|- <angle> Representa angulos (deg,rad,grad,turn)
+|- <time> Representam o tempo (s, ms)
+|- <resolution> Descrevem resoluções para dispositivos (dpi, dpcm, dppx)
+
+Unidade de Medidas Relativas
+
+( % ) Porcentagem - Utiliza como referencia o elemento pai para definir o seu tamanho por exemplo se o elemento pai tiver 500px de largura e você definir uma largura do elemento filho uma lagura de 50% disso ela vai crescer a metade do elemento pai, e se aumentarmos o elemento pai para 600 o filho vai tornar a acompanhar a metade e preencher 300px do elemento pai de forma dinamica.
+
+( em ) - Quando utilizada para definir o tamanho de fonte de um elemento, vai utilizar como refêrencia o valor da propriedade font-siza do elemento pai no qual está inserido.
+Caso utilizarmos a unidade ( em ) para outras propriedades que não sejam o tamanho da fonte do elemento, o resultado será em relação ao tamanho da fonte do próprio elemento em que está sendo definida a propriedade.
+
+( rem ) - Tem o mesmo funcionamento da unidade de medida ( em ) com a diferença que o ( rem ) está relacionado ao tamanho da fonte do elemento raiz, chamado root, que no caso é a tag html que por padrão já vem definido com 16px. 
+
+( vw ) Viewport Width - Ela é a area visivel de uma página web podendo variar para cada dispositivo. Calculando 1vw = 1% da area visivel de largura do dispositivo
+( vh ) Viewport Heigth Esse por sua vez define a altura visivel do dispositivo mantendo o mesmo 1vh = 1% da página web.
+
+
+
+
+ 

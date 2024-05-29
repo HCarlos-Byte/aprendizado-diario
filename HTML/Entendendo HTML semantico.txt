@@ -1,0 +1,12 @@
+Com o HTML:5 temos uma função muito mais semantica para o html com algumas tags facilitando pesquisas em sites de busca, e tambem no momento de outra pessoa mexer dentro do site.
+<main> é uma tag principal da pagina não pode ficar dentro de outra tag (filha) com exceções é claro de (body, div, entre outras), ela deve ser unica dentro da pagina não pode ter mais de uma dentro do documento.
+<header> O cabecalho o topo da pagina.
+<footer> O rodapé da página fica em baixo.
+<section> representa uma seção generica dentro do html quando não existe elemento semantico para o conteudo.
+<aside> pode ser considerado um elemento que mostra um conteudo que tem uma certa relação ao assunto principal mas não necessariamente tem função auxiliar dentro do texto.
+<nav> geralmente usado para um menu de navegação dentro do site, geralmente utilizamos como uma lista não ordenada ( ul ) para melhor configuração no css.
+<article> é um artigo relacionado ao conteudo principal, por exemplo de um blog ou jornal onde são colocados comentarios dentro dele.
+Com as tag <blockquote> e <q> podemos colocar sitações de outros autores e até de outras paginas dentro do <article> a diferença é que <blockquote> tem mais semantica dentro do html além de que ela define um certa formatação padrão dentro do html que deixa diferente e já mostra que aquilo é uma sitação, o <q> é a mesma coisa mas tem menos semantica porem não tem nenhuma formatação padrão dentro do html.
+<figure> representa uma img que geralmente é utilizado uma legenda que a define com o auxilio da tag <figcaption>, isso é bastante utilizado para um conteudo mais acessivel.
+<picture> tambem representa uma img, porem é utilizado como container para varios elementos contidos nele por exemplo podemos ter uma tag <img> definindo uma imagem padrão, e uma <source> que define uma outra imagem caso certa definição ocorrer.
+SEO - Search Engine Optimization - Conjunto de técnicas voltafas para otimizar o posiconamento do site em mecanismos de buscas, 

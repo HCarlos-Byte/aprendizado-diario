@@ -1,0 +1,38 @@
+<i> Italico
+<b> Negrito
+<u> Sublinhado
+<mark> Marca texto
+<sup> joga o carcter para cima
+<sub>joga o caracter para baixo
+<blockquote> faz uma formatação padrão para sugir que o texto é uma explicação
+<font> é uma tag que sozinha não faz nada mas unindo a tag com o atributo
+<font color ="red"> por exemplo já podemos notar uma cor sendo inserida ao site adicionando
+<font color ="red" face="Arial"> o atributo face define a fonte das letras para Arial, mas podemos colocar outras fontes que mais interessarem lembrnado que o site para terceiros vai buscar a fonte definida se ela já estiver instalada no computador é importante colocar outros tipos de fonte caso a definida não esteja instalada no computador.
+
+TAG DIV/SPAN
+<div> cria um caixa que por padrão vem definido como display=block no navegador mas podemos alterar isso com css, isso deixa o conteudo que temos dentro da div cobrindo a pagina inteira na horizontal.
+<span> ao contrario da div a tag span envolve o conteudo porem não aplica nenhuma caracteristica ao conteudo a não ser que alteremos no css.
+
+TAG COLOR
+<color>podemos escolher por nome de cores ou tambem pelos seguintes valores RGB, HEX,HSL
+RGBA, HSLA.
+RGB - (Red Green Blue) define a cor pelo valor de red, green, blue.
+HEX - (Hexadicimal) define a cor pelo valor de inserido tendo que usar o # para depois colocarmos o valor da cor onde os dois primeiros são o valor em red os dois do meio os valores em green e os dois ultimos os valores em blue, lenbrando que o hex utiliza tanto valores numericos e alfabeticos.
+RGBA - mesma coisa do RGB com a adição do A que introduz a tranparaencia da cor sendo assim definimos por exemplo (20,04,05,0.5) onde definimos uma cor com  .5 de transparencia.
+
+TAGS DE MIDIA
+<img> utilizando o atributo (src) podemos colocar tanto uma imagem local do computador quanto uma url da internet, podemos ultilizar imagens com tipo de arquivos (.png / .jpg) 
+Arquivo .png  são mais pesados porem oferecem algumas vantagens em questão de por exemplo fundo da imagem que com esse tipode arquivo é tranparente.
+Com o arquivo .jpg ele é mais leve porem tem um fundo geralmente branco que por exemplo em um fundo preto com esse tipo de arquivo vai ficar em destaque.
+É recomendado utilizar o .png para logos imagens de home page, e o .jpg é utilizado para galerias de imagens ou outros tipo de utilização que não importe a questão do fundo.
+
+<audio> podemos adionar essa tag com o atributo source para adicionarmos um audio dentro do site para por exemplo fazermos um audio livro ou apenas um narrador para o próprio site, podemos adionar a tag <audio autoplay controls> o autoplay é auto explicativo ele da play no audio definido automaticamente, já o controls ira definir controles padrões do html para o site como play, time, volume, velocidade.
+
+<video> seguindo o mesmo padrão podemos inserir o atributo source e adionar a tag <video> com controls, a maioria dos navegadores já tem suporte ao formato .mp4 porem em alguns casos não tem e para esses podemos colocar arquivos .webm para abranger uma maior parte de navegadores.
+
+<track> é um atributo da tag video e define por exemplo as legendas do video ou outros recursos de acessibilidade para o video podemos colocar um atributo src="legendas" srclang="pt-br" onde defimos que tem uma legenda com src e que essa legenda pode ser selecionada em pt-br, e essa legenda vai ser carregada dentro do video caso tenha mais de uma legenda para o video podemos coloca-la e definir com outra srclang="en" por exemplo mostrando que temos uma legenda em pt-br e uma em en, podemos tambem definir um atributo default para uma delas esse atributo vai definir qual vai carregar primeiro.
+
+Tabela
+<table> A tag mãe ela que vai definir e iniciar uma tabela dentro do site, introduzindo as tags <tr> e <td> podemos inserir linhas e colunas respectivamente dentro da tabela, isse deve ser colocado entre <table></table>.
+Se atualizarmos a pagina os dados vão estar lá poren não vai ter nenhuma linha podemos corrigir isso adionando dentro do html <table border="1"> vai aparecer as linhas porem de maneira um pouco rustica mas isso pode ser corrido com css.
+<thead> é uma definição semantica para a tabela para mostrar que os valores que estão dentro dessa tag é o cabeçalho da tabela, o mesmo vale para <tbody> onde define que tudo que está ali esta dentro do corpo da tabela e <tfoot> onde mostra que tudo que está ali é o rodape da tabela.

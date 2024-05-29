@@ -1,0 +1,10 @@
+Entendo Objetos
+    Um objeto no JS é uma coleção dinamica de chave e valor, podemos adicionar e remover valores de um a objeto já definido já que ele é dinamico.
+    Podemos atribuir uma função dentro de um objeto.
+    Objeto Litaral é um objeto que não precisa de uma classe para existir
+    Lista de Objetos é uma lista de objetos que podem ser armazenado um conjunto de dados
+                                          
+    
+Entendendo Classe
+    Classe é o que define o objeto, instancia é a ocorencia desse objeto.
+    

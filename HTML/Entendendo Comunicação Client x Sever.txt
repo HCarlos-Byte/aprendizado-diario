@@ -1,0 +1,28 @@
+Internet -  como surgiu?
+Telegrafo - 1958 - com código morse utilizando o telegrafo pode ser considerado a primeira forma de comunicação.
+Arpanet - 1969 - sistema de comunicação em pacotes, enviados um a um e que permitia multiplos destinos. A primeira conexão estabelecida foi feita em 29/10/1969 entre a univerdidade da california  e o instituto de stanford sendo envia a plavra "LOGIN", mas só chegando "LO" sendo assim a primeira falha na comunicação, podemos dizer que a sigla "LO" também foi a primeira palavra a circular pela internet.
+Com a união de Vinton Cerf e Robert Kahn criaram o protocolo TCP/IP inplantando isso na ARPANET criando assim micro-redes como (MILNET, NSFNET, NASA, entre outras).
+Em 1989, Tim Berners-Lee viu a oportunidade de unir hipertexto com TCP/IP e criar a World Wide Web (WWW) O primeiro navegador da internet, publicando a primeira página Web em 06 de Agosto de 1991 (http://info.cern.ch/)
+
+Conceito de Client
+Basicamente quem consome o conteudo, quando entramos um site ele solicita os arquivos para o servidor e o servidor nos retorna os arquivos solicitados dependendo da conexão do client baixando um arquivo de cache no dispositivo visando manter os aqurivos armazenados para caso do client ultilizar o site novamente tirando um fluxo mais pesado do server.
+
+Navegadores
+São programas instalados no dispositivo e tem a função de interpretar e executar os arquivos, seguindo padrões W3C que é um padrão estabelecida para que não existam diferanças enormes para cada navegador, porém diferenças vão existir já que se trata de empresas diferentes contudo cada um deles deve seguir esse padrão W3C.
+Ultilizando o link (https://www.w3schools.com/tags/ref_html_browsersupport.asp) onde existe uma tabela de tags e suas determinadas compatibilidades com os browsers.
+
+Aplicação Web
+São soluções criadas que possuem a internet como meio de comunicação entre client x sever mas não necessitando de instalação no dispositivo.
+
+Conceito de server
+Usando a conexão com a internet pra ter a comunicação com a rede, porém não necessariamente ele tem que estar conectado com a internet um servidor pode ser considerado um computador que armazena e distribui as informações dentro de uma rede local. Podendedo existir servidores de Arquivos, Segurança, Streaming, Web, E-mail.
+
+Sistema operacional para servidores são totalmente diferente dos que usamos nos dispositivos tendo como sitemas (Windows Server, Ubuntu, CentOS, Debian, Fedora, Oracle) e tambem temos os servidores Web com (Apache, NNginx). A comunicação entre Sistema Operacional x Sevidores Web ocorre da seguinte maneira quando o Sistema operacional identifica uma requisição de um client e ele manda o Servidor Web devolver a resposta com o HTML, CSS, Javascript, Imagens, Texto... Tudo isso ocorre com um Hardware que pode ser até mesmo um PC de casa mas obviamente esse servidor será limitado a grandes tarefas.
+
+Servidores Proxy são servidores que criam um bloqueio pré determinado que define quais sites ou aplicações podemos acessar.
+FireWall na verdade é um sistema instalado porem é um servidor que bloqueia acessos maliciosos de fora da rede ou até mesmo dentro dela.
+Servidor Web ele transmite a informação web para a internet e retorna para o client.
+Servidor de email são utilizados para armazenar emails.
+Database Sever é onde armazenamos informações de login por exemplo geralmente esse servidor é externo a outro sevidor Web.
+Intranet como uma conexão local onde a comunicação não passa pela internet.
+DNS serve para redirecionar a comunicação para um certo IP
