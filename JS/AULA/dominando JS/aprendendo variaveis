@@ -1,0 +1,24 @@
+/* TIPOS DE DADOS
+
+_primitivos
+
+boolean - baiscamente true e false que nos retorna diferentes valores dependendo do resultado.
+EX:
+    let nome = '';
+
+    if (nome) {
+        console.log('preenchido');
+    }
+    
+    Dessa maneira retornando false já que nada esta preenchendo a variavel nome mas caso tenha pelo menos um caracter ele aparecera preenchido.
+
+
+null - Ausencia de valor
+undefined - Ausencia de declaração
+number 
+string - conjunto de caracteres imutaveis
+synbol - objeto imutavel unico 
+
+_object - 
+
+*/
